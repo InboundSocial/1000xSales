@@ -1,0 +1,147 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Newsletter - ${SITE_TITLE}`} description="Subscribe to our newsletter for weekly insights on automation, AI, and scaling your business" />
+	</head>
+	<body>
+		<Header />
+		
+		<!-- Hero Section -->
+		<section class="bg-gradient-to-r from-purple-600 to-blue-600 text-white py-16">
+			<div class="container mx-auto px-4 text-center">
+				<h1 class="text-4xl md:text-5xl font-bold mb-4">Join Our Newsletter</h1>
+				<p class="text-xl max-w-2xl mx-auto">
+					Get weekly insights delivered straight to your inbox. No fluff, just actionable strategies.
+				</p>
+			</div>
+		</section>
+
+		<!-- Main Content -->
+		<section class="py-16">
+			<div class="container mx-auto px-4">
+				<div class="max-w-4xl mx-auto">
+					
+					<!-- What You'll Get -->
+					<div class="text-center mb-12">
+						<h2 class="text-3xl font-bold mb-6">What You'll Get</h2>
+						<div class="grid md:grid-cols-2 gap-6">
+							<div class="bg-white p-6 rounded-lg shadow-md text-left">
+								<div class="text-3xl mb-3">🤖</div>
+								<h3 class="font-bold text-lg mb-2">Automation Strategies</h3>
+								<p class="text-gray-600">Real-world automation workflows you can implement today</p>
+							</div>
+							<div class="bg-white p-6 rounded-lg shadow-md text-left">
+								<div class="text-3xl mb-3">🧠</div>
+								<h3 class="font-bold text-lg mb-2">AI Implementation</h3>
+								<p class="text-gray-600">How to use AI to qualify leads and scale outreach</p>
+							</div>
+							<div class="bg-white p-6 rounded-lg shadow-md text-left">
+								<div class="text-3xl mb-3">📈</div>
+								<h3 class="font-bold text-lg mb-2">Growth Tactics</h3>
+								<p class="text-gray-600">Proven methods to 1000x your sales pipeline</p>
+							</div>
+							<div class="bg-white p-6 rounded-lg shadow-md text-left">
+								<div class="text-3xl mb-3">💡</div>
+								<h3 class="font-bold text-lg mb-2">Case Studies</h3>
+								<p class="text-gray-600">Real results from businesses like yours</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- Newsletter CTA -->
+					<div class="bg-white rounded-lg shadow-xl p-8 md:p-12 text-center">
+						<h2 class="text-3xl font-bold mb-4">Subscribe to The Sales Brief</h2>
+						<p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+							Get weekly insights on automation, AI, and scaling your business delivered straight to your inbox.
+						</p>
+						
+						<a href="https://www.thesalesbrief.com/" 
+						   target="_blank"
+						   rel="noopener noreferrer"
+						   class="inline-block bg-gradient-to-r from-blue-600 to-purple-600 hover:from-blue-700 hover:to-purple-700 text-white font-bold py-4 px-10 rounded-lg transition duration-200 transform hover:scale-105 text-lg">
+							Subscribe to The Sales Brief →
+						</a>
+
+						<p class="text-sm text-gray-500 mt-6">
+							Join 1,000+ entrepreneurs getting actionable insights every week
+						</p>
+					</div>
+					
+					<!-- Embedded Newsletter (Optional) -->
+					<div class="bg-gray-50 rounded-lg p-8 mt-8">
+						<p class="text-center text-gray-600 mb-4">Or subscribe directly below:</p>
+						<div class="max-w-4xl mx-auto">
+							<iframe src="https://www.thesalesbrief.com/" 
+							        style="width: 100%; min-height: 600px; border: none; border-radius: 8px;" 
+							        title="The Sales Brief Newsletter">
+							</iframe>
+						</div>
+					</div>
+
+					<!-- Social Proof -->
+					<div class="mt-12 text-center">
+						<p class="text-gray-600 mb-6">Trusted by entrepreneurs and businesses worldwide</p>
+						<div class="flex justify-center gap-4 flex-wrap">
+							<span class="bg-gray-100 px-6 py-3 rounded-lg font-semibold text-gray-700">1,000+ Subscribers</span>
+							<span class="bg-gray-100 px-6 py-3 rounded-lg font-semibold text-gray-700">Weekly Insights</span>
+							<span class="bg-gray-100 px-6 py-3 rounded-lg font-semibold text-gray-700">No Spam Ever</span>
+						</div>
+					</div>
+
+					<!-- Benefits List -->
+					<div class="mt-12 bg-gradient-to-r from-blue-50 to-purple-50 rounded-lg p-8">
+						<h3 class="text-2xl font-bold mb-6 text-center">Why Subscribe?</h3>
+						<div class="grid md:grid-cols-2 gap-4">
+							<div class="flex items-start gap-3">
+								<svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<div>
+									<h4 class="font-semibold mb-1">Actionable Content</h4>
+									<p class="text-sm text-gray-600">Every email includes tactics you can implement immediately</p>
+								</div>
+							</div>
+							<div class="flex items-start gap-3">
+								<svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<div>
+									<h4 class="font-semibold mb-1">Exclusive Resources</h4>
+									<p class="text-sm text-gray-600">Access to templates, workflows, and automation blueprints</p>
+								</div>
+							</div>
+							<div class="flex items-start gap-3">
+								<svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<div>
+									<h4 class="font-semibold mb-1">Real Case Studies</h4>
+									<p class="text-sm text-gray-600">Learn from businesses that have 1000x'd their results</p>
+								</div>
+							</div>
+							<div class="flex items-start gap-3">
+								<svg class="w-6 h-6 text-green-500 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+									<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+								</svg>
+								<div>
+									<h4 class="font-semibold mb-1">No Fluff</h4>
+									<p class="text-sm text-gray-600">Straight to the point. We value your inbox as much as you do</p>
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<Footer />
+	</body>
+</html>

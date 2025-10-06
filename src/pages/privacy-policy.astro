@@ -1,0 +1,80 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Privacy Policy - ${SITE_TITLE}`} description="Privacy Policy - 1000xSales" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<article>
+				<div class="prose">
+					<div class="title">
+						<h1>Privacy Policy</h1>
+						<hr />
+					</div>
+					<div class="content">
+						Privacy Policy for Profit Alchemy Incorporated D.B.A. 1000X Sales
+						
+						Last Updated: April, 2024
+						
+						Introduction: Profit Alchemy Incorporated d.b.a. 1000x Sales ("we," "our," or "us") is deeply committed to safeguarding your privacy. This Privacy Policy serves to clarify how we manage and protect the personal and business information you entrust to us when utilizing our services aimed at helping you build an online business.
+						
+						Information Collection and Use: We collect a comprehensive range of personal and business information. This includes, but is not limited to, your name, email address, phone number, mailing address, and browsing history. Importantly, we collect banking information exclusively for the purpose of processing payments for our services. The methods we employ for gathering this information encompass online forms, cookies, phone conversations, and various business software applications. We leverage this information to fulfill our contractual obligations, enhance our service offerings, and conduct sales and marketing initiatives. Additionally, we may rent or sell your information to third-party businesses offering services we believe could be beneficial to you, thereby earning a commission.
+						
+						Data Sharing: In the course of our business operations, we may disseminate your information to third-party entities for a variety of purposes, including but not limited to, marketing and sales endeavors.
+						
+						Data Retention: Consistent with applicable laws and best practices, we retain your personal and business information for durations that are necessary to fulfill the objectives for which the information was initially collected. Thereafter, we maintain the data for an additional period to comply with any legal or regulatory requirements that may apply.
+						
+						Security Measures: We have implemented industry-standard security measures to safeguard your information. These measures include Secure Socket Layer (SSL) encryption and the use of secure servers, thereby ensuring that your data is transmitted and stored in a secure environment.
+						
+						Opt-Out and Data Deletion: Upon the completion of our services, you are afforded the option to either opt out of further data collection or request the deletion of your data by reaching out to us through the contact methods provided below.
+						
+						International Data Transfers: We do not engage in the international transfer of data.
+						
+						Contact Us: Should you have any privacy-related concerns or questions, you can contact us via email at
+						
+						[support@1000xsales.com](mailto:support@1000xsales.com)
+						
+						or by postal mail at 308 Poplar Street, Kamloops, B.C., Canada, V2B 4B8.
+					</div>
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main {
+		width: calc(100% - 2em);
+		max-width: 100%;
+		margin: 0;
+	}
+	.prose {
+		width: 720px;
+		max-width: calc(100% - 2em);
+		margin: auto;
+		padding: 1em;
+		color: rgb(var(--gray-dark));
+	}
+	.title {
+		margin-bottom: 1em;
+		padding: 1em 0;
+		text-align: center;
+		line-height: 1;
+	}
+	.title h1 {
+		margin: 0 0 0.5em 0;
+	}
+	.content {
+		margin-bottom: 2rem;
+		line-height: 1.6;
+	}
+</style>

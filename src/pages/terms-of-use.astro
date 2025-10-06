@@ -1,0 +1,102 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Terms of Use - ${SITE_TITLE}`} description="Terms of Use - 1000xSales" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<article>
+				<div class="prose">
+					<div class="title">
+						<h1>Terms of Use</h1>
+						<hr />
+					</div>
+					<div class="content">
+						Last Updated: April 2024
+						
+						**Introduction**
+						
+						Welcome to Automated Profits Incorporated ("we," "our," or "us"). By choosing to use the services we offer, you are entering into a binding agreement with us, governed by the terms and conditions outlined herein. If you do not agree with these terms, we kindly ask that you refrain from using our services. Your continued use of our services signifies your acceptance of these terms and any changes that may be made to them in the future.
+						
+						**Eligibility Criteria**
+						
+						To be eligible to use our services, you must meet certain criteria. Specifically, you must be at least 19 years of age. By accessing or using our services, you are affirming that you meet this age requirement and are fully able to enter into this agreement.
+						
+						**Account Termination Conditions**
+						
+						We take the integrity of our services seriously. As such, we reserve the right to terminate your account and cease providing services to you without issuing a refund under certain conditions. These conditions include, but are not limited to, the unauthorized sharing or copying of any information we provide, or failure on your part to perform the work that is recommended and required for us to fulfill our services effectively. We reserve the right to make this determination at our sole discretion.
+						
+						**Warranties, Guarantees, and Limitations**
+						
+						We offer a 90-day guarantee for our services. If we are unable to help you build a business that generates a minimum of $10,000 per month within 90 days, you are entitled to request a refund, less any applicable fees. However, this guarantee becomes null and void if you violate any of the conditions that could lead to account termination, as described above. While we make every effort to deliver on our promises, we do not offer any warranties beyond those explicitly stated in this agreement.
+						
+						**Refunds and Cancellations**
+						
+						Our refund and cancellation policies are directly tied to the warranties and guarantees section. If you qualify for a refund under the terms of our 90-day guarantee, you may request one, less any applicable fees. The specifics of how to request a refund and the conditions under which a refund will be granted are detailed in the Warranties and Guarantees section.
+						
+						**Dispute Resolution**
+						
+						In the event of a dispute arising from or related to the use of our services, such disputes will be resolved through binding arbitration. This arbitration will be conducted in accordance with industry best practices and will serve as the final resolution mechanism for any disagreements between you and us.
+						
+						**Limitation of Liability**
+						
+						We expressly disclaim any liability for outcomes related to the use of our services. You agree that you cannot seek any remedies beyond those explicitly provided in our 90-day guarantee. If you fail to meet your obligations as outlined in these terms, you accept full responsibility for any consequences.
+						
+						**User Conduct and Prohibited Activities**
+						
+						We expect all users to adhere to industry best practices. This includes not engaging in fraudulent activities, not violating any laws, and not interfering with or disrupting the services we provide. Failure to adhere to these guidelines may result in account termination.
+						
+						**Intellectual Property Rights**
+						
+						We retain full intellectual property rights to all the information and services we provide. Any unauthorized resale or distribution of our proprietary systems is strictly prohibited and will result in legal action.
+						
+						**Changes to Terms**
+						
+						We reserve the right to modify these terms at any time, without prior notice. It is your responsibility to review these terms regularly to stay informed of any changes. Continued use of our services after changes have been made constitutes acceptance of those changes.
+						
+						**Contact Information**
+						
+						For any questions or concerns regarding these terms, you can reach us via email at [support@automatedProfits.Co](mailto:support@automatedProfits.Co) or by postal mail at 308 Poplar Street, Kamloops, B.C., Canada, V2B 4B8.
+					</div>
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main {
+		width: calc(100% - 2em);
+		max-width: 100%;
+		margin: 0;
+	}
+	.prose {
+		width: 720px;
+		max-width: calc(100% - 2em);
+		margin: auto;
+		padding: 1em;
+		color: rgb(var(--gray-dark));
+	}
+	.title {
+		margin-bottom: 1em;
+		padding: 1em 0;
+		text-align: center;
+		line-height: 1;
+	}
+	.title h1 {
+		margin: 0 0 0.5em 0;
+	}
+	.content {
+		margin-bottom: 2rem;
+		line-height: 1.6;
+	}
+</style>

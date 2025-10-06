@@ -1,0 +1,16 @@
+{
+    "name": "dev-stack-lite",
+    "image": "mcr.microsoft.com/devcontainers/javascript-node:22",
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "esbenp.prettier-vscode",
+                "dbaeumer.vscode-eslint",
+                "astro-build.astro-vscode",
+                "ms-azuretools.vscode-docker"
+            ]
+        }
+    },
+    "postCreateCommand": "corepack enable && pnpm --version || npm i -g pnpm",
+    "updateRemoteUserUID": true
+}

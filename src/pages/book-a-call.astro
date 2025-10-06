@@ -1,0 +1,123 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Book A Call - ${SITE_TITLE}`} description="Schedule a free consultation call with our team to discuss automations, AI solutions, and mass outreach strategies" />
+	</head>
+	<body>
+		<Header />
+		
+		<!-- Hero Section -->
+		<section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
+			<div class="container mx-auto px-4 text-center">
+				<h1 class="text-4xl md:text-5xl font-bold mb-4">Book Your Free Consultation</h1>
+				<p class="text-xl max-w-2xl mx-auto">
+					Let's discuss how we can 1000x your sales with unlimited automations and AI-powered solutions
+				</p>
+			</div>
+		</section>
+
+		<!-- Main Content -->
+		<section class="py-16">
+			<div class="container mx-auto px-4">
+				<div class="max-w-4xl mx-auto">
+					
+					<!-- Benefits Grid -->
+					<div class="grid md:grid-cols-2 gap-8 mb-12">
+						<div class="bg-white p-6 rounded-lg shadow-md">
+							<div class="text-4xl mb-4">🎯</div>
+							<h3 class="text-xl font-bold mb-2">Personalized Strategy</h3>
+							<p class="text-gray-600">Get a custom automation roadmap tailored to your business goals and challenges.</p>
+						</div>
+						
+						<div class="bg-white p-6 rounded-lg shadow-md">
+							<div class="text-4xl mb-4">🚀</div>
+							<h3 class="text-xl font-bold mb-2">Quick Implementation</h3>
+							<p class="text-gray-600">Learn how to start automating immediately with our proven frameworks and templates.</p>
+						</div>
+						
+						<div class="bg-white p-6 rounded-lg shadow-md">
+							<div class="text-4xl mb-4">💡</div>
+							<h3 class="text-xl font-bold mb-2">Expert Guidance</h3>
+							<p class="text-gray-600">Work with automation specialists who have 1000x'd sales for businesses like yours.</p>
+						</div>
+						
+						<div class="bg-white p-6 rounded-lg shadow-md">
+							<div class="text-4xl mb-4">📈</div>
+							<h3 class="text-xl font-bold mb-2">ROI Focused</h3>
+							<p class="text-gray-600">Discover exactly how automation will impact your bottom line within 30 days.</p>
+						</div>
+					</div>
+
+					<!-- Calendar Embed Section -->
+					<div class="bg-white rounded-lg shadow-xl p-8">
+						<h2 class="text-3xl font-bold text-center mb-6">Schedule Your Call</h2>
+						<p class="text-center text-gray-600 mb-8">
+							Pick a time that works best for you. The call typically lasts 30 minutes.
+						</p>
+						
+						<!-- Calendar Embed -->
+						<div class="w-full">
+							<iframe src="https://link.automatedprofits.co/widget/booking/xi3JrfjY06sdRL0pkqcK" 
+							        style="width: 100%; min-height: 700px; border: none; overflow: hidden;" 
+							        scrolling="no" 
+							        id="booking-calendar">
+							</iframe>
+						</div>
+					</div>
+					<script src="https://link.automatedprofits.co/js/form_embed.js" type="text/javascript"></script>
+
+					<!-- What to Expect Section -->
+					<div class="mt-12 bg-blue-50 rounded-lg p-8">
+						<h2 class="text-2xl font-bold mb-6 text-center">What to Expect</h2>
+						<div class="grid md:grid-cols-3 gap-6">
+							<div class="text-center">
+								<div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">1</div>
+								<h3 class="font-bold mb-2">Discovery</h3>
+								<p class="text-gray-700 text-sm">We'll discuss your current sales process and identify bottlenecks</p>
+							</div>
+							<div class="text-center">
+								<div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">2</div>
+								<h3 class="font-bold mb-2">Strategy</h3>
+								<p class="text-gray-700 text-sm">Get a custom roadmap for automation and AI implementation</p>
+							</div>
+							<div class="text-center">
+								<div class="bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">3</div>
+								<h3 class="font-bold mb-2">Next Steps</h3>
+								<p class="text-gray-700 text-sm">Leave with clear action items you can implement immediately</p>
+							</div>
+						</div>
+					</div>
+
+					<!-- FAQ Section -->
+					<div class="mt-12">
+						<h2 class="text-2xl font-bold mb-6 text-center">Frequently Asked Questions</h2>
+						<div class="space-y-4">
+							<div class="bg-white p-6 rounded-lg shadow-md">
+								<h3 class="font-bold mb-2">Is this call really free?</h3>
+								<p class="text-gray-600">Yes! This is a no-obligation consultation. We'll provide value whether you work with us or not.</p>
+							</div>
+							<div class="bg-white p-6 rounded-lg shadow-md">
+								<h3 class="font-bold mb-2">How long is the call?</h3>
+								<p class="text-gray-600">Typically 30 minutes. We respect your time and keep things focused and actionable.</p>
+							</div>
+							<div class="bg-white p-6 rounded-lg shadow-md">
+								<h3 class="font-bold mb-2">What should I prepare?</h3>
+								<p class="text-gray-600">Just bring an open mind and be ready to discuss your current sales process and goals.</p>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<Footer />
+	</body>
+</html>

@@ -1,62 +1,92 @@
-# Astro Starter Kit: Blog
+# 1000xSales - Astro Website
 
-```sh
-pnpm create astro@latest -- --template blog
+WordPress to Astro migration project hosted on Cloudflare Pages.
+
+## 🚀 Quick Start
+
+```bash
+# Install dependencies
+pnpm install
+
+# Start development server
+pnpm dev
+
+# Build for production
+pnpm build
+
+# Preview production build
+pnpm preview
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 📁 Project Structure
 
-Features:
-
-- ✅ Minimal styling (make it your own!)
-- ✅ 100/100 Lighthouse performance
-- ✅ SEO-friendly with canonical URLs and OpenGraph data
-- ✅ Sitemap support
-- ✅ RSS Feed support
-- ✅ Markdown & MDX support
-
-## 🚀 Project Structure
-
-Inside of your Astro project, you'll see the following folders and files:
-
-```text
-├── public/
+```
+/
+├── public/              # Static assets (images, robots.txt, etc.)
 ├── src/
-│   ├── components/
-│   ├── content/
-│   ├── layouts/
-│   └── pages/
-├── astro.config.mjs
-├── README.md
-├── package.json
-└── tsconfig.json
+│   ├── assets/         # Optimized images
+│   ├── components/     # Reusable Astro components
+│   ├── content/
+│   │   └── blog/       # Blog posts (Markdown/MDX)
+│   ├── layouts/        # Page layouts
+│   ├── pages/          # File-based routing
+│   └── styles/         # Global CSS
+├── astro.config.mjs    # Astro configuration
+├── MIGRATION_GUIDE.md  # WordPress migration instructions
+└── DEPLOYMENT.md       # Cloudflare Pages deployment guide
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## 📝 Available Scripts
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+| Command | Description |
+|---------|-------------|
+| `pnpm dev` | Start local dev server at http://localhost:4321 |
+| `pnpm build` | Build for production (output: `dist/`) |
+| `pnpm preview` | Preview production build locally |
+| `pnpm convert:wordpress` | Helper for WordPress content conversion |
 
-The `src/content/` directory contains "collections" of related Markdown and MDX documents. Use `getCollection()` to retrieve posts from `src/content/blog/`, and type-check your frontmatter using an optional schema. See [Astro's Content Collections docs](https://docs.astro.build/en/guides/content-collections/) to learn more.
+## 🔄 WordPress Migration
 
-Any static assets, like images, can be placed in the `public/` directory.
+See [MIGRATION_GUIDE.md](./MIGRATION_GUIDE.md) for detailed instructions on:
+1. Exporting WordPress content
+2. Converting posts to Markdown
+3. Migrating media files
+4. Customizing the design
 
-## 🧞 Commands
+## 🌐 Deployment
 
-All commands are run from the root of the project, from a terminal:
+See [DEPLOYMENT.md](./DEPLOYMENT.md) for Cloudflare Pages deployment instructions.
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `pnpm install`             | Installs dependencies                            |
-| `pnpm dev`             | Starts local dev server at `localhost:4321`      |
-| `pnpm build`           | Build your production site to `./dist/`          |
-| `pnpm preview`         | Preview your build locally, before deploying     |
-| `pnpm astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `pnpm astro -- --help` | Get help using the Astro CLI                     |
+**Quick Deploy:**
+1. Push to GitHub
+2. Connect repository to Cloudflare Pages
+3. Build settings:
+   - Build command: `pnpm build`
+   - Output directory: `dist`
+   - Node version: 22
 
-## 👀 Want to learn more?
+## 🛠️ Tech Stack
 
-Check out [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- **Framework:** [Astro](https://astro.build) 5.x
+- **Content:** Markdown/MDX with Content Collections
+- **Styling:** CSS (customize as needed)
+- **Deployment:** Cloudflare Pages
+- **Image Optimization:** Sharp
 
-## Credit
+## 📚 Documentation
 
-This theme is based off of the lovely [Bear Blog](https://github.com/HermanMartinus/bearblog/).
+- [Astro Documentation](https://docs.astro.build)
+- [Cloudflare Pages Docs](https://developers.cloudflare.com/pages/)
+- [Content Collections Guide](https://docs.astro.build/en/guides/content-collections/)
+
+## ✅ Next Steps
+
+- [ ] Export WordPress content (Tools → Export)
+- [ ] Convert posts to Markdown (use `npx wordpress-export-to-markdown`)
+- [ ] Customize design in `src/components/` and `src/layouts/`
+- [ ] Update site URL in `astro.config.mjs`
+- [ ] Add your content to `src/content/blog/`
+- [ ] Migrate images to `public/` folder
+- [ ] Test locally with `pnpm dev`
+- [ ] Deploy to Cloudflare Pages
+- [ ] Configure custom domain

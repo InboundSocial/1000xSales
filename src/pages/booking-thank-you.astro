@@ -1,0 +1,89 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead title={`Booking Thank You - ${SITE_TITLE}`} description="Booking Thank You - 1000xSales" />
+	</head>
+	<body>
+		<Header />
+		<main>
+			<article>
+				<div class="prose">
+					<div class="title">
+						<h1>Booking Thank You</h1>
+						<hr />
+					</div>
+					<div class="content">
+						## Thank You Your Appointment Has Been Booked.
+								
+									## Please Watch The Short Video Below &#x2b07;&#xfe0f;
+								
+								https://www.youtube.com/watch?v=XHOmBV4js_E		
+									## **Step 1: **After watching the video above be sure to add the appointment to your calendar.
+								
+									## Due to a recent google calendar appointment from non-contacts will not automatically be added to your calendar.
+								
+									## Inside of your email account you may see a message like the one below. Please click I know this sender to add the appointment to your calendar.
+						
+									## **Step 2:** Our team will reach out to confirm your information via text message as soon as we see your booking come in. Please reply and let us know we have the right person!
+						
+						Copyright © 2024 Profit Alchemy. All rights reserved.
+						
+						[Privacy Policy](https://1000xsales.com/privacy-policy/) | [Terms of Service](https://1000xsales.com/terms-of-use/)
+						
+						This website is operated and maintained by Profit Alchemy. Use of the website is governed by its [Terms Of Service](https://closers.io/terms-of-service/) and [Privacy Policy](https://1000xsales.com/privacy-policy/).
+						
+						Profit Alchemy is a marketing and automation company. We do not sell a business opportunity, “get rich quick” program or money-making system. We believe, with education, individuals can be better prepared to make investment decisions, but we do not guarantee success in our training. We do not make earnings claims, efforts claims, or claims that our training will make you any money. All material is intellectual property and protected by copyright. Any duplication, reproduction, or distribution is strictly prohibited. Please see our [Full Disclosure](https://1000xsales.com/full-disclosure/) for important details.
+						
+						Statements and depictions are the opinions, findings, or experiences of individuals who generally have purchased education and training. Results vary, are not typical, and rely on individual effort, time, and skill, as well as unknown conditions and other factors. We do not measure earnings or financial performance. Instead, we track completed transactions and satisfaction of services by voluntary surveys. Results show that most Advanced Training clients who apply the training. You should not, however, equate completed sales closing transactions with financially successful transactions. Further, many customers do not continue with the program, do not apply what they learn, or do attempt to apply what they learn but nonetheless have difficulty in making sales successful for them.
+						
+						The Company may link to content or refer to content and/or services created by or provided by third parties that are not affiliated with the Company. The Company is not responsible for such content and does not endorse or approve it. The Company may provide services by or refer you to third-party businesses. Some of these businesses have common interest and ownership with the Company.
+						
+						308 Poplar Street, Kamloops B.C. Canada
+						
+						We use cookies to help improve, promote and protect our services. By continuing to use this site, you agree to our privacy policy and terms of use.
+						
+						This site is not a part of Facebook website or Facebook, Inc.
+						
+						This site is NOT endorsed by Facebook in any way. FACEBOOK is a trademark of FACEBOOK, Inc.
+					</div>
+				</div>
+			</article>
+		</main>
+		<Footer />
+	</body>
+</html>
+
+<style>
+	main {
+		width: calc(100% - 2em);
+		max-width: 100%;
+		margin: 0;
+	}
+	.prose {
+		width: 720px;
+		max-width: calc(100% - 2em);
+		margin: auto;
+		padding: 1em;
+		color: rgb(var(--gray-dark));
+	}
+	.title {
+		margin-bottom: 1em;
+		padding: 1em 0;
+		text-align: center;
+		line-height: 1;
+	}
+	.title h1 {
+		margin: 0 0 0.5em 0;
+	}
+	.content {
+		margin-bottom: 2rem;
+		line-height: 1.6;
+	}
+</style>
